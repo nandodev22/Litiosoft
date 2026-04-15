@@ -1,2 +1,6 @@
 # Litiosoft
-Proyecto de Desarrollo de Sistemas Hipermedia - Curso 2025/26
+Proyecto de Desarrollo de Sistemas Hipermedia
+> [!NOTE]
+> Curso 2025/26
+
+
