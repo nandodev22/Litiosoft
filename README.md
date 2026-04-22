@@ -6,3 +6,6 @@ Proyecto de Desarrollo de Sistemas Hipermedia - **Curso 2025/26**
 > - Ana Isabel Brenes Ramírez
 > - Miguel López Rodríguez
 > - Javier Molina González
+
+> [!INFO]
+> Inteligencia Artificial para el renderizado de modelos 3D: **Meshy AI**
