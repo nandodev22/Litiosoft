@@ -1,29 +1,34 @@
-using System;
 using UnityEngine;
 
 public class MaquinaEjemplo : MonoBehaviour
 {
-    public GameObject valvula1;
+    public GameObject valvula1; 
     public Material mat1, mat2;
     private MeshRenderer mr;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        mr= GetComponent<MeshRenderer>();
+        mr = GetComponent<MeshRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (valvula1.transform.rotation.x >= 60)
+        if (valvula1 == null || mr == null) return;
+
+        // Leemos la rotación en Z (Forward) que es el eje que usa Meta por defecto
+        float anguloZ = valvula1.transform.localEulerAngles.z;
+
+        // Normalizamos el ángulo para que Unity no se confunda (de 0..360 a -180..180)
+        if (anguloZ > 180f) anguloZ -= 360f;
+
+        // Si giramos la válvula 30 grados o más
+        if (Mathf.Abs(anguloZ) >= 30f)
         {
-            mr.material=mat1;
-            Debug.Log("Mat1");
-        } else
+            if (mr.sharedMaterial != mat1) mr.sharedMaterial = mat1;
+        } 
+        else
         {
-            mr.material=mat2;
-            Debug.Log("Mat2");
+            if (mr.sharedMaterial != mat2) mr.sharedMaterial = mat2;
         }
     }
 }
