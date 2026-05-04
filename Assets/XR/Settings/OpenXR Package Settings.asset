@@ -93,6 +93,31 @@ MonoBehaviour:
   targetOpenXRApiVersion: 
   required: 0
   customRuntimeLoaderName: 
+--- !u!114 &-8412519470000312212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90ae1e8c3c7a542bba339faf2e771c5a, type: 3}
+  m_Name: AndroidXRSupportFeature Standalone
+  m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.AndroidXRSupportFeature
+  m_enabled: 0
+  nameUi: Android XR Support
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.androidxr-support
+  openxrExtensionStrings: 
+  company: Unity Technologies
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
+  symmetricProjection: 0
+  optimizeBufferDiscards: 1
+  multiviewRenderRegionsOptimizationMode: 0
 --- !u!114 &-8385783571651255274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,7 +295,7 @@ MonoBehaviour:
   features:
   - {fileID: 8896148219119764698}
   - {fileID: 2560681566517598958}
-  - {fileID: -1837311339503893306}
+  - {fileID: 3106261866908599598}
   - {fileID: 3021196108090447108}
   - {fileID: -7199489106139018518}
   - {fileID: -7024949992543772332}
@@ -281,7 +306,7 @@ MonoBehaviour:
   - {fileID: 3828234959820401393}
   - {fileID: 6126315685923506761}
   - {fileID: 3237175981489359262}
-  - {fileID: 9044471053428189995}
+  - {fileID: -1185300258262039194}
   - {fileID: 4089339678811796776}
   - {fileID: 6151926521010248499}
   - {fileID: 2437172877338106810}
@@ -324,6 +349,28 @@ MonoBehaviour:
   m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
+--- !u!114 &-6519112261626906221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c36843bac48b29469f79baf3c98f9b6, type: 3}
+  m_Name: AndroidXRHandMeshData Standalone
+  m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.AndroidXRHandMeshData
+  m_enabled: 0
+  nameUi: 'Android XR: Hand Mesh Data'
+  version: 0.1.0
+  featureIdInternal: com.unity.openxr.feature.androidxr-hand-mesh-data
+  openxrExtensionStrings: XR_ANDROID_hand_mesh
+  company: Unity Technologies
+  priority: 0
+  targetOpenXRApiVersion: 
+  required: 0
+  customRuntimeLoaderName: 
 --- !u!114 &-6398034756257623110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,7 +475,7 @@ MonoBehaviour:
   features:
   - {fileID: 2400620217714473050}
   - {fileID: 383797491093629920}
-  - {fileID: 3106261866908599598}
+  - {fileID: -8412519470000312212}
   - {fileID: 1000046122564720334}
   - {fileID: 7168220377934395669}
   - {fileID: -847513348770921500}
@@ -438,7 +485,7 @@ MonoBehaviour:
   - {fileID: -9104451073183055031}
   - {fileID: 567581289614007542}
   - {fileID: 1701870667662768867}
-  - {fileID: -1185300258262039194}
+  - {fileID: -6519112261626906221}
   - {fileID: -8803593794185717088}
   - {fileID: 3876645213958357353}
   - {fileID: 1821876701738125761}
@@ -767,7 +814,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c36843bac48b29469f79baf3c98f9b6, type: 3}
-  m_Name: AndroidXRHandMeshData Standalone
+  m_Name: AndroidXRHandMeshData Android
   m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.AndroidXRHandMeshData
   m_enabled: 0
   nameUi: 'Android XR: Hand Mesh Data'
@@ -1408,7 +1455,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90ae1e8c3c7a542bba339faf2e771c5a, type: 3}
-  m_Name: AndroidXRSupportFeature Standalone
+  m_Name: AndroidXRSupportFeature Android
   m_EditorClassIdentifier: Unity.XR.AndroidOpenXR::UnityEngine.XR.OpenXR.Features.Android.AndroidXRSupportFeature
   m_enabled: 0
   nameUi: Android XR Support
