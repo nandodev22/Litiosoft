@@ -1,48 +1,52 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
 public class PasoVariables : MonoBehaviour
 {
     [Header("Configuración de Escenas")]
-    public string nombreEscenaDestino; // Nombre de la escena a la que vamos
-    public TextMeshProUGUI textoDisplayIndice; // Para mostrar el índice en la UI
+    public string nombreEscenaDestino;
+    public TextMeshProUGUI textoDisplayIndice;
+
+    [Header("Paneles del Menú")]
+    public GameObject panelPrincipal;
+    public GameObject panelCreditos;
 
     void Start()
     {
-        // Al empezar la escena, leemos qué nivel se seleccionó (por defecto 0)
+        // Esto solo se ejecuta si estamos en la escena jugable
         int nivelSeleccionado = PlayerPrefs.GetInt("IndiceNivel", 0);
         
         if (textoDisplayIndice != null)
         {
             textoDisplayIndice.text = "Nivel Cargado: " + nivelSeleccionado;
         }
-        
-        Debug.Log("Iniciando escena. El nivel actual guardado es: " + nivelSeleccionado);
-
-        /*if (nivelSeleccionado == 0) {
-            // Configurar evaporador para agua (ejemplo)
-            Debug.Log("Configurando máquina para Agua");
-        } else if (nivelSeleccionado == 1) {
-            // Configurar evaporador para alcohol (ejemplo)
-            Debug.Log("Configurando máquina para Alcohol");
-        }*/
     }
 
-    /// <summary>
-    /// Esta función será llamada por los botones del Canvas.
-    /// </summary>
-    /// <param name="indiceNivel">El número que identifica al nivel/escena</param>
     public void SeleccionarNivelYCargar(int indiceNivel)
     {
-        // 1. Guardamos el índice en PlayerPrefs para que "sobreviva" al cambio de escena
         PlayerPrefs.SetInt("IndiceNivel", indiceNivel);
-        PlayerPrefs.Save(); // Forzamos el guardado en disco
-
-        Debug.Log("Botón pulsado. Guardando índice: " + indiceNivel);
-
-        // 2. Cargamos la escena de juego/máquina
+        PlayerPrefs.Save();
         SceneManager.LoadScene(nombreEscenaDestino);
+    }
+
+    public void MostrarCreditos()
+    {
+        if (panelPrincipal != null)
+        {
+            panelPrincipal.SetActive(false);
+        }
+
+        if (panelCreditos != null)
+        {
+            panelCreditos.SetActive(true);
+        }
+    }
+
+    public void VolverAlMenu()
+    {
+        Debug.Log("Intentando volver al menú..."); // Esto te dirá en la consola si el botón se pulsa
+        if(panelPrincipal != null) panelPrincipal.SetActive(true);
+        if(panelCreditos != null) panelCreditos.SetActive(false);
     }
 }
