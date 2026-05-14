@@ -183,6 +183,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2594286026888997491}
   - {fileID: 292732166510531914}
   m_Father: {fileID: 5976257974921253278}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -920,7 +921,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 0.6330382, b: 0, a: 1}
-    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.16862746, g: 1, b: 0, a: 1}
     m_PressedColor: {r: 0.7056604, g: 0.5100368, b: 0.009320007, a: 1}
     m_SelectedColor: {r: 0.16934103, g: 1, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -941,7 +942,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1989763052485490919}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2016946995392983873}
+        m_TargetAssemblyTypeName: SelectorNiveles, Assembly-CSharp
+        m_MethodName: IrAlNivel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1677901654705496578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2051,7 +2064,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7979256019773117664}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2016946995392983873}
+        m_TargetAssemblyTypeName: SelectorNiveles, Assembly-CSharp
+        m_MethodName: IrAlNivel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7187731555045700871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2269,7 +2294,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 0.6330382, b: 0, a: 1}
     m_HighlightedColor: {r: 0.080519676, g: 0.9924528, b: 0.20071691, a: 1}
-    m_PressedColor: {r: 0, g: 1, b: 0.23522729, a: 1}
+    m_PressedColor: {r: 0.7058824, g: 0.50980395, b: 0.007843138, a: 1}
     m_SelectedColor: {r: 0.79622644, g: 0.78253466, b: 0.75566393, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -2289,7 +2314,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1276060784578331338}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2016946995392983873}
+        m_TargetAssemblyTypeName: SelectorNiveles, Assembly-CSharp
+        m_MethodName: IrAlNivel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3554058412059084537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2583,3 +2620,48 @@ MonoBehaviour:
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
   _canvas: {fileID: 8753812726703892294}
+--- !u!1 &8694376821668930642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2594286026888997491}
+  - component: {fileID: 2016946995392983873}
+  m_Layer: 0
+  m_Name: LogicaNiveles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2594286026888997491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8694376821668930642}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.15971994, y: -2, z: 29.09629}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7933438617929724651}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2016946995392983873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8694376821668930642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c562a9321c5e7c44943ccb562b49f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectorNiveles
+  nombreEscenaJugable: EscenaJugable
